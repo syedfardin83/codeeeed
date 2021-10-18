@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
+    <title>Nav Bar</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            display: flex;
+            margin-left: 78px;
+            /* justify-content: center; */
+        }
+
+        .navbar {
+            /* background-color: black; */
+            display: flex;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .nav-item {
+            padding: 20px 19px;
+            font-size: 1.1rem;
+            padding: 20px 24px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .leftNav {
+            width: 50%;
+            display: flex;
+        }
+
+        .rightNav {
+            width: 50%;
+
+            /* display: flex; */
+            /* background-color: black; */
+            /* justify-content: center; */
+            align-items: center;
+            text-align: right;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 5%;
+        }
+
+        .logo img {
+            width: 189%;
+            border: 3px solid white;
+            border-radius: 116px;
+            margin: 5px 5px;
+            margin-left: 60px;
+        }
+
+        .nav-list li a:hover {
+            color: gray;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid gray;
+            border-radius: 9px;
+            /* display: flex;
+
+            justify-content: center;
+            align-items: center; */
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.7) url('https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNvZGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80');
+
+            background-size: cover;
+            background-blend-mode: darken;
+
+        }
+
+        .firstSection {
+            height: 100%;
+            color: white;
+        }
+
+        .headin {
+            /*display: flex; */
+            text-align: center;
+            font-family: 'Poppins', 'Courier New', Courier, monospace;
+            position: relative;
+            top: 15px;
+            font-size: 42px;
+        }
+
+        #image {
+            width: 54%;
+            margin-left: 12px;
+            margin-top: 13px;
+        }
+
+        .item-heading {
+            font-family: 'Poppins', sans-serif;
+            font-size: 25px;
+        }
+
+        .box {
+            display: flex;
+            margin-top: 54px;
+            padding-bottom: 10px;
+        }
+
+        .firstHalf {
+            width: 20%;
+        }
+
+        .secondHalf {
+            width: 80%;
+        }
+
+        .item-content {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .btn {
+            margin-top: 10px;
+            font-family: 'Poppins', sans-serif;
+            padding: 7px 7px;
+            color: black;
+            background-color: white;
+            border: 3px solid black;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            color: white;
+            background-color: black;
+            transition: all 0.3s ease;
+        }
+
+        .white-box {
+            background-color: white;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            margin: 63px 130px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            /* display: flex; */
+        }
+
+        #aabb {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .ccaa {
+            margin-top: 5px;
+            font-size: large;
+        }
+
+        .footer {
+            color: white;
+            background-color: blue;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .logos {
+            display: flex;
+        }
+
+
+        .loo {
+            width: 100px;
+            padding: 30px 81px;
+
+        }
+
+        .log {
+            width: 25%;
+        }
+
+        .python {
+            border-right: 1px solid gray;
+        }
+
+        .HTML {
+            border-right: 1px solid gray;
+        }
+
+        .CSS {
+            width: 72px;
+            border-right: 1px solid gray;
+        }
+
+        .JS {
+            position: relative;
+            top: 2px;
+        }
+
+        .wa {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+
+
+
+        /* Making Responsive */
+        @media only screen and (max-width:1105px) {
+            .white-box {
+                background-color: red;
+
+            }
+
+            .loo{
+                padding: 30px 50px;
+            }
+        }
+
+        @media only screen and (min-width: 760px) and (max-width:850px) {
+            .white-box {
+                background-color: yellow;
+
+            }
+
+            .loo{
+                padding: 30px 20px;
+            }
+        }
+
+        @media only screen and (min-width: 375px) and (max-width:760px) {
+            .white-box {
+                background-color: green;
+
+            }
+
+            .loo{
+                padding: 2px 10px;
+                width: 50%;
+            }
+
+            /* .logos{
+                display: flex;
+                flex-direction: column;
+            } */
+
+            /* .loo{
+                justify-content: center;
+                align-items: center;
+            } */
+        }
+
+        /*.white-box {
+            background-color: white;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            margin: 63px 130px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            /* display: flex; 
+        } */
+        
+        @media only screen and (min-width: 0px) and (max-width:375px) {
+            .white-box {
+                background-color: blue;
+
+            }
+
+            .white-box{
+                margin: 10px 30px;
+            }
+
+            .loo{
+                padding: 30px 20px;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" style="background-color: #0c1210;">
+        <div class="leftNav">
+            <div class="logo">
+                <img src="/img/4.png" alt="Icon" id="img">
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Blog</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="rightNav">
+            <input type="text" id="search">
+            <button id="search-btn">Search</button>
+        </div>
+    </nav>
+
+    <div class="background firstSection">
+        <h1 class="headin">Code To Code</h1>
+
+        <div class="white-box">
+            <p id="aabb"><b>Download my apps</b></p>
+            <p class="ccaa">Here, you can download all the apps that I have made publically available. There are two
+                kinds of applications-PC applictions and web applications. You can use the web apps here, on your
+                browser without downloading and installing. Whereas, the PC applications has to be downloaded and
+                installed before use. Just click on the download button,which will take you to another page where the
+                process of downloading and installing, usage of the app and overview will be written.</p>
+
+            <div class="logos">
+
+                <div class="log"> <img src="/img/5.png" alt="Python logo" class="loo python"> </div>
+                <div class="log"> <img src="/img/6.png" alt="HTML logo" class="loo HTML"> </div>
+                <div class="log"><img src="/img/7.png" alt="CSS logo" class="loo CSS"></div>
+                <div class="log"><img src="/img/8.png" alt="Javascript logo" class="loo JS"></div>
+            </div>
+        </div>
+
+        <h1 class="wa">PC applications</h1>
+
+        <div class="box">
+            <div class="firstHalf">
+                <img src="/screenshots/calculator/1.png" alt="Screenshot" id="image">
+            </div>
+            <div class="secondHalf">
+                <p class="item-heading">Calculator App</p>
+                <p class="item-content">This application is a simple calculator app which runs only on windows. It has
+                    buttons with numbers, and other operators. You can do calculations either by clicking on the buttons
+                    or by clicking on the curresponding keys on your keyboard.</p>
+
+                <button class="btn">Download...</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="box">
+            <div class="firstHalf">
+                <img src="/screenshots/lie detector/1.png" alt="Screenshot" id="image">
+            </div>
+            <div class="secondHalf">
+                <p class="item-heading">Lie Detector App</p>
+                <p class="item-content">This application is a lie detector application. First you will have to tell your
+                    statement aloud and click on the "Check" button to check if your given statement is true or false.
+                    This application is not a real lie detector app, and it just throws true or false randomly.</p>
+
+                <button class="btn">Download...</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; Copyright 2015 codetocode.netlify.app</p>
+        </div>
+    </footer>
+</body>
+
+</html>
